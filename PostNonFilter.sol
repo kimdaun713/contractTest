@@ -9,7 +9,7 @@ contract PostUnfilterContract {
 
     mapping(uint256 => Post) private posts;
     uint256 private postCount = 0;
-
+    uint256 private count = 0;
     function addPost(uint256 id, bytes32 hash, address writerID) public {
         require(!postExists(id), "Post already exists.");
         posts[id] = Post(hash, writerID);
