@@ -72,7 +72,6 @@ contract PostFilter {
 
 
 
-
     function getFilters() public view returns (bytes32[] memory) {
         return postsMergePool;
     }
